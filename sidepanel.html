@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>VForge Inspector</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <h1>VForge Inspector</h1>
+    <span class="subtitle">torre de control del inspector visual</span>
+  </header>
+
+  <section id="config">
+    <h2>Configuracion</h2>
+    <label>
+      Secret del relay
+      <input type="password" id="cfg-secret" placeholder="tu secret" autocomplete="off" />
+    </label>
+    <label>
+      Dominio / proyecto activo
+      <input type="text" id="cfg-project" placeholder="ej. vforge.site" />
+    </label>
+    <label>
+      Agente destino
+      <select id="cfg-agent">
+        <option value="claude_code">claude_code</option>
+        <option value="claude">claude</option>
+        <option value="grok">grok</option>
+      </select>
+    </label>
+    <button id="save-config">Guardar configuracion</button>
+    <div id="save-feedback"></div>
+  </section>
+
+  <hr />
+
+  <section id="pins">
+    <div class="pins-header">
+      <h2>Pines de esta sesion</h2>
+      <button id="clear-pins" class="ghost">Limpiar</button>
+    </div>
+    <ul id="pin-list"></ul>
+    <p id="empty-state">Activa el inspector en cualquier pagina (boton flotante o Alt+Shift+V) y marca un elemento para verlo aqui.</p>
+  </section>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
