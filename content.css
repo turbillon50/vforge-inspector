@@ -1,0 +1,122 @@
+/* content.css - VForge Inspector: violeta/cyan sobre fondo oscuro */
+
+#vforge-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: #0a0814;
+  border: 1.5px solid #7c3aed;
+  color: #22d3ee;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2147483647;
+  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  user-select: none;
+  transition: background .15s, transform .15s;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+#vforge-btn:hover { background: #150f24; transform: scale(1.06); }
+#vforge-btn.vforge-btn-on {
+  background: #7c3aed;
+  color: #fff;
+  border-color: #22d3ee;
+}
+
+#vforge-hover-outline {
+  position: absolute;
+  pointer-events: none;
+  border: 2px solid #22d3ee;
+  background: rgba(34, 211, 238, 0.08);
+  z-index: 2147483646;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.vforge-pin-badge {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #7c3aed;
+  color: #fff;
+  border: 2px solid #22d3ee;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 600;
+  z-index: 2147483647;
+  pointer-events: none;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.vforge-mini-panel {
+  position: absolute;
+  min-width: 260px;
+  max-width: 300px;
+  background: #0a0814;
+  color: #e5e7eb;
+  padding: 10px;
+  border: 1px solid #7c3aed;
+  border-radius: 8px;
+  z-index: 2147483647;
+  font-family: system-ui, -apple-system, sans-serif;
+  box-shadow: 0 4px 16px rgba(0,0,0,.5);
+}
+.vforge-mini-panel-header {
+  font-size: 11px;
+  color: #22d3ee;
+  margin-bottom: 6px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.vforge-mini-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  background: #150f24;
+  color: #e5e7eb;
+  border: 1px solid #3a2e57;
+  border-radius: 4px;
+  padding: 6px;
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-size: 13px;
+}
+.vforge-mini-panel textarea:focus {
+  outline: none;
+  border-color: #22d3ee;
+}
+.vforge-mini-panel-actions {
+  display: flex;
+  gap: 6px;
+}
+.vforge-mini-panel button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 500;
+}
+.vforge-mini-panel .vforge-send {
+  background: #7c3aed;
+  color: #fff;
+  flex: 1;
+}
+.vforge-mini-panel .vforge-send:disabled {
+  background: #3a2e57;
+  cursor: not-allowed;
+}
+.vforge-mini-panel .vforge-cancel {
+  background: transparent;
+  color: #888;
+  border: 1px solid #3a2e57;
+}
