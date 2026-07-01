@@ -1,0 +1,182 @@
+/* sidepanel.css - VForge Inspector, tema oscuro violeta/cyan */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #0a0814;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+}
+
+header { margin-bottom: 16px; }
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+.subtitle {
+  font-size: 11px;
+  color: #6b6580;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #22d3ee;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #a5a0b8;
+}
+
+input, select {
+  width: 100%;
+  padding: 7px 8px;
+  margin-top: 4px;
+  background: #150f24;
+  color: #e5e7eb;
+  border: 1px solid #3a2e57;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: #22d3ee;
+}
+
+button {
+  background: #7c3aed;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+}
+button:hover { background: #6b2be6; }
+button.ghost {
+  background: transparent;
+  border: 1px solid #3a2e57;
+  color: #a5a0b8;
+  padding: 4px 10px;
+  font-weight: 500;
+}
+button.ghost:hover { border-color: #7c3aed; color: #fff; }
+
+#save-feedback {
+  font-size: 11px;
+  color: #4ade80;
+  margin-top: 8px;
+  height: 14px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #201a33;
+  margin: 18px 0;
+}
+
+.pins-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.pins-header h2 { margin: 0; }
+
+#pin-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pin-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #120c20;
+  border: 1px solid #201a33;
+  border-radius: 8px;
+}
+.pin-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.pin-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+.pin-selector {
+  font-size: 11px;
+  color: #6b6580;
+  font-family: ui-monospace, monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  margin: 0 8px;
+}
+.pin-note {
+  font-size: 12px;
+  color: #d4d0e0;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+.pin-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.status {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.status-pending { background: #3a2e57; color: #c4b8e8; }
+.status-sent { background: #0f3d2e; color: #4ade80; }
+.status-error { background: #3d0f16; color: #f87171; }
+
+.retry {
+  background: transparent;
+  border: 1px solid #f87171;
+  color: #f87171;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.retry:hover { background: #3d0f16; }
+
+#empty-state {
+  font-size: 12px;
+  color: #6b6580;
+  text-align: center;
+  padding: 20px 8px;
+  line-height: 1.5;
+}
